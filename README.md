@@ -59,8 +59,20 @@ After identifying the attack type, it is also important to check if this is a pl
 <b>Objective:</b>
 <br>
 <ul>
-  <li>Check if there is an email showing that there will be planned work by searching for information such as hostname, username, IP address on the mailbox.</li>
+  <li>Check if there is an email showing that there will be planned work by searching for information such as hostname, username, and IP address on the mailbox.</li>
   <li>Check if the device generating malicious traffic belongs to attack simulation products. If the Hostname contains the name of Attack Simulation products (such as Verodin, AttackIQ, Picus…), these devices belong to Attack Simulation products within the framework of LetsDefend simulation and it is a planned work.</li>
 </ul>
 <br>
-After checking 
+After checking the SIEM, it is safe to say that this was NOT a planned work attack. "Please view attachments for screenshots of findings". The next step is to find out what the direction is traffic this alert is going through. After continuing my investigation, this alert was directed through the <b>Company > Internet</b>. <br>
+<b>Source IP:</b> 167.99.169.17 <br>
+<b>Destination IP:</b> 172.16.17.18 <br>
+<b>Destination Port:</b> 443 <br>
+<br>
+
+<b>STEP 4</b><br>
+Since it is now detected that the device is compromised, it is important to contain this internal device to avoid any future attacks. By heading to <b>Endpoint Security</b> and requesting to contain the device.<br>
+<br>
+<b>Summary:</b><br>
+I've analyzed the requested URL by decoding it and identified a payload consistent with an SQL Injection attack. Upon URL decoding, it was confirmed that the payload was crafted to exploit an SQL Injection vulnerability. By filtering the source address through the Log Management page, we observed multiple related requests originating from the same source. Further examination of these requests revealed that all were targeting the same SQL Injection vulnerability. Analysis of the response size for each request showed uniformity, with all responses returning a status code of 500. This indicates that the SQL Injection attack was unsuccessful. A successful attack would typically result in varying response sizes and a status code of 200.
+
+

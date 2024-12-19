@@ -28,3 +28,12 @@
   <br>
   <b>Device Action:</b> Allowed
 </div>
+<br>
+[Introduction: This repository aims to analyze, detect, and prevent SQL injection attacks within web applications. By integrating detection mechanisms into an existing web environment, we can monitor for suspicious SQL injection activity, log attacks in real time, and implement preventive measures to safeguard sensitive data. The primary goal is to recognize potential SQL injection attacks as early as possible, allowing for swift remediation.]
+<br>
+<br>
+Please also use this as a guide on how to work phishing alerts using Let's Defend. For any questions or concerns you can <b>CONTACT</b> me directly on <a href= "https://www.linkedin.com/in/bradley-vilsaint-414329267/">LinkedIn</a> or email <a href="info@letsdefend.io">info@letsdefend.io</a> for support.
+<br>
+<br>
+<b>STEP 1</b><be>
+While working through this alert, it is important to keep track of what the alert has provided. <b>What should I do first?</b> Well good question. If you head to <b>"CASE PLAYBOOK"</b>, you are provided with details on what you should check for. Here is the collection data for this alert: <br><br>

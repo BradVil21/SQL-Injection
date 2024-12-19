@@ -36,4 +36,12 @@ Please also use this as a guide on how to work phishing alerts using Let's Defen
 <br>
 <br>
 <b>STEP 1</b><be>
-While working through this alert, it is important to keep track of what the alert has provided. <b>What should I do first?</b> Well good question. If you head to <b>"CASE PLAYBOOK"</b>, you are provided with details on what you should check for. Here is the collection data for this alert: <br><br>
+While working through this alert, it is important to keep track of what the alert has provided. <b>What should I do first?</b> Well good question. If you head to <b>"CASE PLAYBOOK"</b>, you are provided with details on what you should check for. Examine the rule name. Rule names are usually created specifically for the attack to be detected. By examining the rule name, you can understand which attack you are facing. Detect between which two devices the traffic is occurring. It's a good starting point to understand the situation by learning about the direction of traffic, what protocol is used between devices, etc. Here is the collection data for this alert: <br><br>
+Ownership of the IP addresses and devices.<br>
+If the traffic is coming from outside (Internet)<br>
+Ownership of IP address (Static or Pool Address? Who owns it? Is it web hosting?)<br>
+Reputation of IP Address (Search in VirusTotal, AbuseIPDB, Cisco Talos)<br>
+If the traffic is coming from the company network;<br>
+The hostname of the device<br>
+Who owns the device (username)<br>
+Last user logon time<br>
